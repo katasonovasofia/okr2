@@ -67,3 +67,99 @@ ul, ol {
 li {
     font-size: 16px;                 /* Розмір шрифта для елементів списку */
 }
+
+/* Марковані списки */
+ul {
+    list-style-type: square; /* Тип маркера: квадрат */
+    margin: 20px; /* Відступи навколо списку */
+    padding: 10px; /* Внутрішні відступи */
+    font-family: Arial, sans-serif; /* Шрифт списку */
+    font-size: 16px; /* Розмір шрифта */
+    color: #2c3e50; /* Колір тексту */
+    background-color: #f9f9f9; /* Колір фону списку */
+    border: 1px solid #ddd; /* Рамка навколо списку */
+}
+
+/* Нумеровані списки */
+ol {
+    list-style-type: decimal; /* Тип маркера: арабські цифри */
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Georgia', serif; /* Шрифт списку */
+    font-size: 16px;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Списки визначень */
+dl {
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+dt {
+    font-weight: bold; /* Термін визначення */
+    color: #2980b9; /* Колір терміну */
+}
+
+dd {
+    margin-left: 20px; /* Відступ для визначення */
+    color: #555555; /* Колір тексту визначення */
+}
+
+/* Стиль для абзаців в списках */
+li {
+    margin-bottom: 10px; /* Відступ між елементами списку */
+}
+
+/* Стилі для таблиць */
+
+/* Загальний стиль для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Злиття меж таблиці */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Стиль для заголовків таблиці */
+th {
+    background-color: #2980b9; /* Колір фону заголовків */
+    color: #ffffff; /* Колір тексту */
+    padding: 10px; /* Відступи всередині заголовків */
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+/* Стиль для клітинок таблиці */
+td {
+    padding: 10px; /* Відступи всередині клітинок */
+    text-align: left;
+    border: 1px solid #ddd; /* Межі клітинок */
+}
+
+/* Фон для рядків таблиці */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Колір фону для парних рядків */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Колір фону для непарних рядків */
+}
+
+/* Міжрядкові відступи та інтерліньяж для таблиць */
+table, th, td {
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+/* Стиль для таблиць з фоном */
+table {
+    background-color: #f9f9f9; /* Загальний фон таблиці */
+    margin: 20px 0; /* Відступи навколо таблиці */
+    padding: 10px;
+}
