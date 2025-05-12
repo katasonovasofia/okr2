@@ -105,3 +105,39 @@ p.special {
     font-size: 18px;
     color: #2c3e50;
 }
+
+#promotion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#promotion p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h2 + p {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#services-list > li {
+    font-style: italic;
+    font-size: 18px;
+}
+
+#promotion h2 {
+    color: #e74c3c;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#promotion b {
+    font-size: 20px;
+    color: #e74c3c;
+}

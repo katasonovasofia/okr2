@@ -6,17 +6,36 @@
     <title>Послуги Готелю "Адара"</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <style>
+        /* Контекстний селектор для абзаців в контейнері intro-text */
+        #intro-text p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* Сусідній селектор для першого посилання після заголовка */
+        h1 + a {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        /* Дочірній селектор для елементів списку в .services-list */
+        .services-list > li {
+            color: #2c3e50;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
     <h1>Послуги готелю "Адара"</h1>
-    <ul>
+    <ul class="services-list">
         <li>Спа-послуги</li>
         <li>Ресторан</li>
         <li>Тренажерний зал</li>
         <li>Організація екскурсій</li>
     </ul>
 
-    <p>Ми пропонуємо вам широкий спектр послуг для вашого комфорту та розваг.</p>
+    <p id="intro-text">Ми пропонуємо вам широкий спектр послуг для вашого комфорту та розваг.</p>
 
     <table cellspacing="10" cellpadding="15">
         <caption>Послуги готелю "Адара"</caption>
@@ -31,13 +50,12 @@
         </tr>
         <tr>
             <td rowspan="2">Спа-послуги</td>
-      
             <td>Масаж, сауна, косметичні процедури</td>
-            <td rowspan="1"> 500 грн/година</td>
+            <td rowspan="1">500 грн/година</td>
         </tr>
         <tr>
             <td>Мінеральні ванни, обгортання</td>
-            <td rowspan="1"> 500 грн/година</td>
+            <td rowspan="1">500 грн/година</td>
         </tr>
         <tr>
             <td>Ресторан</td>
