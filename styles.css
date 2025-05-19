@@ -9,13 +9,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', serif; 
-    color: #2980b9;  
+    color: #1374b4;  
     text-align: center;  
     margin: 20px 0; 
 }
 
 a {
-    color: #2980b9; 
+    color: #175fcb; 
     text-decoration: none;  
 }
 
@@ -81,13 +81,33 @@ tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
-p.special {
-    font-size: 20px !important;
-    color: brown !important;
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #2c3e50;
 }
 
-#main-heading {
+.services-list li {
+    margin-bottom: 10px;
+}
+
+.services-list li a {
     color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.services-list li a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+
+.main-heading {
+    color: #159cf0;
     text-align: center;
     font-size: 32px;
     margin-top: 20px;
@@ -105,6 +125,7 @@ p.special {
     font-size: 18px;
     color: #2c3e50;
 }
+
 
 #promotion {
     background-color: #f9f9f9;
@@ -141,3 +162,107 @@ h2 + p {
     font-size: 20px;
     color: #e74c3c;
 }
+
+.service-description h3 {
+    color: #d73414; 
+  }
+  
+/* Контейнер для плаваючого блоку і таблиці */
+.container {
+    position: relative; /* для контексту, якщо потрібно */
+    overflow: hidden;   /* очищення float */
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Плаваючий блок зліва */
+  .float-block {
+    float: left;
+    width: 320px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, #8abbdc, #b8deec);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 15px rgba(41, 128, 185, 0.4);
+    position: relative; /* для можливих зсувів */
+    top: 0;
+  }
+  
+  /* Псевдоелементи для плаваючого блоку */
+  .float-block::before {
+    content: "♡";
+    color: #eaee06;
+    font-weight: bold;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  
+  .float-block::after {
+    content: "☝";
+    color: #eaee06;
+    font-weight: bold;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Перший абзац всередині плаваючого блоку жирний */
+  .float-block p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Таблиця займає решту ширини */
+  table {
+    border-collapse: collapse;
+    width: calc(100% - 340px); /* Відняли ширину плаваючого блоку і відступ */
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  /* Стилі для таблиці */
+  table th,
+  table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  /* Змінний фон рядків */
+  table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Псевдокласи для посилань */
+  a:link {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #6c7a89;
+  }
+  
+  a:active {
+    color: #e74c3c;
+  }
+  
+  a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+  }
+  
+  /* Псевдоклас :first-child для першого рядка таблиці */
+  table tr:first-child {
+    font-weight: bold;
+    background-color: #1c5aa6;
+    color: white;
+  }
+  
