@@ -1,105 +1,221 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Катасонова Софія" />
-    <title>Послуги Готелю "Адара"</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="author" content="Катасонова Софія" />
+  <title>Послуги Готелю "Адара"</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+      background: #f9f9f9;
+      color: #333;
+      user-select: none;
+      position: relative;
+    }
+
+    /* Секція спеціальної акції */
+    #promotion {
+      border: 2px solid #bb2a43;
+      padding: 15px;
+      border-radius: 8px;
+      background-color: #ffe6e6;
+      width: 350px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      cursor: grab;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      z-index: 10;
+    }
+    #promotion.hovered {
+      background-color: #ffd1d1;
+      box-shadow: 0 0 15px rgba(187, 42, 67, 0.7);
+    }
+    #promotion.dragging {
+      cursor: grabbing;
+      opacity: 0.8;
+      box-shadow: 0 0 25px rgba(187, 42, 67, 0.9);
+    }
+
+    /* Стилі для перетягуваних картинок */
+    .draggable-img {
+      width: 150px;
+      border: 2px solid #bb2a43;
+      border-radius: 6px;
+      margin: 10px;
+      position: absolute;
+      cursor: grab;
+      transition: box-shadow 0.3s;
+      user-select: none;
+      z-index: 20;
+    }
+    .draggable-img.hovered {
+      box-shadow: 0 0 15px rgba(187, 42, 67, 0.7);
+    }
+    .draggable-img.dragging {
+      cursor: grabbing;
+      opacity: 0.8;
+      box-shadow: 0 0 25px rgba(187, 42, 67, 0.9);
+    }
+  </style>
 </head>
 <body>
 
-    <h1>Послуги готелю "Адара"</h1>
-        <section id="promotion">
-            <h2>Спеціальна акція!</h2>
-            <p><b>Знижка 20% на спа-послуги!</b></p>
-            <p>Встигніть скористатися нашою пропозицією! Тільки до кінця місяця на всі спа-послуги готелю "Адара" діє знижка 20%. Масаж, сауна, косметичні процедури та багато іншого — за зниженою ціною!</p>
-            <p>Не проґавте можливість подарувати собі релакс за вигідною ціною!</p>
-        </section>
+  <h1>Послуги готелю "Адара"</h1>
+  <section id="promotion">
+    <h2>Спеціальна акція!</h2>
+    <p><b>Знижка 20% на спа-послуги!</b></p>
+    <p>Встигніть скористатися нашою пропозицією! Тільки до кінця місяця на всі спа-послуги готелю "Адара" діє знижка 20%. Масаж, сауна, косметичні процедури та багато іншого — за зниженою ціною!</p>
+    <p>Не проґавте можливість подарувати собі релакс за вигідною ціною!</p>
+  </section>
 
+  <p>Ми пропонуємо вам широкий спектр послуг для вашого комфорту та розваг.</p>
 
-        <p>Ми пропонуємо вам широкий спектр послуг для вашого комфорту та розваг.</p>
-
-        <div class="float-block">
-            <div class="container">
-                <div class="float-block">
-                  <h3>Про нас</h3>
-                  <p><span>Готель "Адара"</span> – сучасний затишний готель у центрі міста.</p>
-                  <p>Ми піклуємося про комфорт кожного гостя, пропонуючи широкий спектр послуг: спа, ресторан, тренажерний зал та екскурсії.</p>
-            <div class="absolute-child">Абсолютний блок</div>
-          </div>
-          
+  <div class="container">
+    <div class="float-block">
+      <h3>Про нас</h3>
+      <p><span>Готель "Адара"</span> – сучасний затишний готель у центрі міста.</p>
+      <p>Ми піклуємося про комфорт кожного гостя, пропонуючи широкий спектр послуг: спа, ресторан, тренажерний зал та екскурсії.</p>
     </div>
-    
-      
-      
-        <table cellspacing="10" cellpadding="15">
-            <caption>Послуги готелю "Адара"</caption>
-            <colgroup>
-                <col span="2" style="background-color: #f2f2f2;" />
-                <col style="background-color: #f9f9f9;" />
-            </colgroup>
-            <tr>
-                <th>Послуга</th>
-                <th>Опис</th>
-                <th>Ціна</th>
-            </tr>
-            <tr>
-                <td rowspan="2">Спа-послуги</td>
-                <td>Масаж, сауна, косметичні процедури</td>
-                <td rowspan="1">500 грн/година</td>
-            </tr>
-            <tr>
-                <td>Мінеральні ванни, обгортання</td>
-                <td rowspan="1">500 грн/година</td>
-            </tr>
-            <tr>
-                <td>Ресторан</td>
-                <td>Традиційна українська кухня, європейські страви</td>
-                <td colspan="2">300 грн/особа</td>
-            </tr>
-            <tr>
-                <td>Тренажерний зал</td>
-                <td>Кардіо, силові тренажери, йога</td>
-                <td>100 грн/година</td>
-            </tr>
-            <tr>
-                <td colspan="2" style="text-align: left;">Організація екскурсій</td>
-                <td>По запиту</td>
-            </tr>
-        </table>
-      </div>
+  </div>
 
-        <div class="service-description">
+  <!-- Дві картинки, які можна перетягувати -->
+  <img src="https://budstroy.kiev.ua/wp-content/uploads/2024/03/a2.png.webp" alt="Фото 1" class="draggable-img" id="dragImg1" style="top: 300px; left: 50px;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmcYqmVudPXf7T-JamlnOjUdyoTHpCVvQdpw&s" alt="Фото 2" class="draggable-img" id="dragImg2" style="top: 300px; left: 250px;">
 
-            <h3>Детальніше про наші послуги:</h3>
+  <script>
+    //  1: Події click, addEventListener, handleEvent і видалення обробників 
 
-       
-            <div class="service-item">
-                <h4><span class="highlight">Спа-послуги</span></h4>
-                <p>У нас ви можете відчути всі переваги відновлення сили та енергії через наші спа-послуги. Ми пропонуємо різноманітні масажі, сауни для розслаблення та косметичні процедури для догляду за шкірою. Крім того, ви можете скористатися мінеральними ваннами та обгортаннями, що допоможуть позбутися стресу та покращити кровообіг.</p>
-            </div>
+    const promoSection = document.getElementById('promotion');
 
-       
-            <div class="service-item">
-                <h4><span class="highlight">Ресторан</span></h4>
-                <p>Наш ресторан пропонує страви традиційної української кухні, такі як борщ, вареники, сало, а також європейські страви, які задовольнять навіть найвибагливіших гурманів. Ми використовуємо тільки свіжі та якісні продукти для приготування їжі, що забезпечує неповторний смак кожної страви.</p>
-            </div>
+    // 1. Призначення обробника через атрибут onclick (імітація)
+    promoSection.setAttribute('onclick', 'promoClickAttr()');
 
-    
-            <div class="service-item">
-                <h4><span class="highlight">Тренажерний зал</span></h4>
-                <p>Для тих, хто бажає підтримати свою фізичну форму під час відпочинку, ми пропонуємо тренажерний зал з кардіо та силовими тренажерами, а також йогу для розслаблення і поліпшення гнучкості тіла. Наші тренери завжди готові допомогти вам у досягненні ваших фітнес-цілей.</p>
-            </div>
+    function promoClickAttr() {
+      alert('Обробник події через атрибут onclick');
+    }
 
-   
-            <div class="service-item">
-                <h4><span class="highlight">Організація екскурсій</span></h4>
-                <p>Ми пропонуємо екскурсії по навколишнім пам'яткам і природним заповідникам. Відвідайте історичні місця та насолоджуйтесь природними красотами. Наші досвідчені гіди проведуть вас по найцікавіших маршрутах, які ви точно запам'ятаєте на все життя.</p>
-            </div>
-       
-          
-        <p><a href="index.html">На головну сторінку</a></p>
-    </div>
+    // 2. Обробник через властивість onclick
+    promoSection.onclick = function () {
+      console.log('Обробник події через властивість onclick');
+    };
+
+    // 3. Два обробники через addEventListener
+    function handlerOne(event) {
+      console.log('Обробник 1 через addEventListener');
+    }
+    function handlerTwo(event) {
+      console.log('Обробник 2 через addEventListener');
+    }
+    promoSection.addEventListener('click', handlerOne);
+    promoSection.addEventListener('click', handlerTwo);
+
+    // 4. Обробник-об’єкт із handleEvent
+    const objHandler = {
+      handleEvent(event) {
+        alert('Обробник-об\'єкт через handleEvent');
+        console.log('Елемент події (event.currentTarget):', event.currentTarget);
+      }
+    };
+    promoSection.addEventListener('click', objHandler);
+
+    // 5. Видалення handlerTwo через 4 секунди із повідомленнями
+    setTimeout(() => {
+      alert('Знижку буде видалено через 3 секунди...');
+      setTimeout(() => {
+        promoSection.removeEventListener('click', handlerTwo);
+        alert('Знижку видалено');
+        console.log('Знижку видалено');
+      }, 3000);
+    }, 4000);
+
+    // 6. Видалення блоку "Спеціальна акція" через 10 секунд із повідомленнями
+    setTimeout(() => {
+      alert('Блок "Спеціальна акція" буде видалено через 3 секунди...');
+      setTimeout(() => {
+        if (promoSection) {
+          promoSection.remove();
+          alert('Блок "Спеціальна акція" видалено');
+          console.log('Блок "Спеціальна акція" видалено');
+        }
+      }, 3000);
+    }, 10000);
+
+    // Видалення обробника-об’єкта через 8 секунд із повідомленнями
+    setTimeout(() => {
+      alert('Обробник-об\'єкт (handleEvent) буде видалено через 3 секунди...');
+      setTimeout(() => {
+        promoSection.removeEventListener('click', objHandler);
+        alert('Обробник-об\'єкт (handleEvent) видалено');
+        console.log('Обробник-об\'єкт (handleEvent) видалено');
+      }, 3000);
+    }, 8000);
+
+
+    // ==== Частина 2: Події mouseover, mouseout, event.target, event.relatedTarget для підсвічування секції ====
+
+    function addHoverEffect(elem) {
+      elem.addEventListener('mouseover', (event) => {
+        if (!elem.contains(event.relatedTarget)) {
+          elem.classList.add('hovered');
+        }
+      });
+      elem.addEventListener('mouseout', (event) => {
+        if (!elem.contains(event.relatedTarget)) {
+          elem.classList.remove('hovered');
+        }
+      });
+    }
+    addHoverEffect(promoSection);
+
+
+    // 3: Перетягування секції та картинок 
+
+    function makeDraggable(elem) {
+      let isDragging = false;
+      let startX, startY;
+      let origX, origY;
+
+      elem.addEventListener('mousedown', (event) => {
+        isDragging = true;
+        elem.classList.add('dragging');
+        startX = event.clientX;
+        startY = event.clientY;
+        const rect = elem.getBoundingClientRect();
+        origX = rect.left;
+        origY = rect.top;
+        event.preventDefault();
+      });
+
+      document.addEventListener('mousemove', (event) => {
+        if (!isDragging) return;
+        let dx = event.clientX - startX;
+        let dy = event.clientY - startY;
+        elem.style.left = origX + dx + 'px';
+        elem.style.top = origY + dy + 'px';
+      });
+
+      document.addEventListener('mouseup', () => {
+        if (isDragging) {
+          isDragging = false;
+          elem.classList.remove('dragging');
+        }
+      });
+    }
+
+    makeDraggable(promoSection);
+
+    const img1 = document.getElementById('dragImg1');
+    const img2 = document.getElementById('dragImg2');
+    addHoverEffect(img1);
+    addHoverEffect(img2);
+    makeDraggable(img1);
+    makeDraggable(img2);
+
+  </script>
 
 </body>
 </html>
